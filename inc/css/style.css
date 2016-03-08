@@ -1,0 +1,400 @@
+/**
+ * This file should get overwritten if Method 1 is used. If Method 2 is chosen,
+ * remove this comment and start adding your styles to this file.
+ */
+header#navbar {
+  display: none;
+}
+@charset "UTF-8";
+
+@import url(http://roboto-webfont.googlecode.com/svn/trunk/roboto.all.css);
+
+/* PREDEFINED CLASSES */
+.clearfix {
+  zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.background-colorful {
+  background: linear-gradient(left, #b64645 0%, #fea223 50%, #95b75d 100%);
+  background: -o-linear-gradient(left, #b64645 0%, #fea223 50%, #95b75d 100%);
+  background: -moz-linear-gradient(left, #b64645 0%, #fea223 50%, #95b75d 100%);
+  background: -webkit-linear-gradient(left, #b64645 0%, #fea223 50%, #95b75d 100%);
+  background: -ms-linear-gradient(left, #b64645 0%, #fea223 50%, #95b75d 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(0, #b64645), color-stop(0.5, #fea223), color-stop(1, #95b75d));
+}
+/* EOF PREDEFINED CLASSES */
+html * {
+  outline: none !important;
+}
+html,
+body {
+  min-height: 100%;
+  padding: 0px;
+  margin: 0px;
+  background: #e5edf2;
+  position: relative;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  color: #002840;
+  overflow-x: hidden;
+}
+html body label .md-input-focused{
+font-size: 12px;
+}
+.body-full-height {
+  height: 100%;
+}
+.body-full-height body {
+  height: 100%;
+}
+.row {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.row [class^='col-xs-'],
+.row [class^='col-sm-'],
+.row [class^='col-md-'],
+.row [class^='col-lg-'] {
+  min-height: 1px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.row.stacked [class^='col-xs-'],
+.row.stacked [class^='col-sm-'],
+.row.stacked [class^='col-md-'],
+.row.stacked [class^='col-lg-'] {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+/* PAGE CONTAINER */
+.page-container {
+  width: 100%;
+  float: left;
+  min-height: 100%;
+  position: relative;
+  background: #163c52;
+  /* END SIDEBAR */
+  /* CONTENT */
+  /* END CONTENT */
+  /* RTL CONTENT MODE */
+  /* END RTL CONTENT MODE */
+}
+.page-container .page-sidebar {
+  padding: 0px;
+  width: 200px;
+  float: left;
+  position: relative;
+  z-index: 3;
+}
+.page-container .page-sidebar.page-sidebar-fixed {
+  position: fixed;
+
+
+}
+.page-container.page-container-wide .page-sidebar {
+  width: 50px;
+  background-color: #19283d;
+}
+.page-container .page-content {
+  min-height: 100%;
+  margin-left: 200px;
+  background: #fff;
+  position: relative;
+  zoom: 1;
+}
+.page-container .page-content:before,
+.page-container .page-content:after {
+  content: "";
+  display: table;
+}
+.page-container .page-content:after {
+  clear: both;
+}
+.page-container .page-content .content-frame {
+  float: left;
+  width: 100%;
+  position: relative;
+ // background: #f5f5f5 url('../img/bg.png') left top repeat;
+}
+.page-container .page-content .content-frame .content-frame-top {
+  float: left;
+  width: 100%;
+  line-height: 30px;
+  padding: 13px 15px 15px;
+  background: rgba(0, 0, 0, 0.02);
+  border-bottom: 1px solid #DDD;
+  border-top: 1px solid #DDD;
+}
+.page-container .page-content .content-frame .content-frame-top .page-title {
+  padding: 0px;
+  width: auto;
+}
+.page-container .page-content .content-frame .content-frame-top .page-title h2 {
+  margin-bottom: 0px;
+  font-size: 22px;
+}
+.page-container .page-content .content-frame .content-frame-left {
+  float: left;
+  width: 300px;
+  padding: 10px;
+  min-height: 100%;
+  background: rgba(0, 0, 0, 0.02);
+  border-right: 1px solid #DDD;
+}
+.page-container .page-content .content-frame .content-frame-left.padding-0 {
+  padding: 0px;
+}
+.page-container .page-content .content-frame .content-frame-left .block {
+  padding: 0px;
+  margin-bottom: 20px;
+}
+.page-container .page-content .content-frame .content-frame-left h4 {
+  margin-top: 10px;
+}
+.page-container .page-content .content-frame .content-frame-left > .form-group {
+  margin-bottom: 20px;
+}
+.page-container .page-content .content-frame .content-frame-right {
+  float: right;
+  width: 300px;
+  padding: 10px;
+  min-height: 100%;
+  background: rgba(0, 0, 0, 0.02);
+  border-left: 1px solid #DDD;
+}
+.page-container .page-content .content-frame .content-frame-right.padding-0 {
+  padding: 0px;
+}
+.page-container .page-content .content-frame .content-frame-right.padding-0 .block {
+  padding: 10px;
+}
+.page-container .page-content .content-frame .content-frame-right h4 {
+  margin-top: 10px;
+}
+.page-container .page-content .content-frame .content-frame-right .block {
+  padding: 0px;
+  margin-bottom: 20px;
+}
+.page-container .page-content .content-frame .content-frame-right > .form-group {
+  margin-bottom: 20px;
+}
+.page-container .page-content .content-frame .content-frame-body {
+  padding: 70px 10px 10px 10px;
+  margin-left: 300px;
+}
+.page-container .page-content .content-frame .content-frame-body.content-frame-body-left {
+  margin-left: 0px;
+  margin-right: 300px;
+}
+.page-container .page-content .content-frame .content-frame-left-toggle,
+.page-container .page-content .content-frame .content-frame-right-toggle {
+  display: none;
+  margin-left: 5px;
+}
+.page-container .page-content .page-content-wrap {
+  min-height: 800px;
+  float: left;
+  width: 100%;
+  background-color: #fff;
+}
+.page-container.page-container-wide .page-content {
+  margin-left: 50px;
+  -webkit-transition: all 200ms ease;
+  -moz-transition: all 200ms ease;
+  -ms-transition: all 200ms ease;
+  -o-transition: all 200ms ease;
+  transition: all 200ms ease;
+}
+.page-container.page-navigation-toggled .page-content {
+  margin-left: 50px;
+}
+.page-container.page-mode-rtl .page-sidebar {
+  float: right;
+}
+.page-container.page-mode-rtl .page-sidebar.page-sidebar-fixed {
+  right: 0px;
+}
+.page-container.page-mode-rtl .page-content {
+  margin-left: 0px;
+  margin-right: 220px;
+}
+.page-container.page-mode-rtl.page-container-wide .page-content {
+  margin-right: 50px;
+}
+.page-container.page-navigation-top .page-content {
+  margin-left: 0px;
+}
+.page-container.page-navigation-top-fixed .x-navigation.x-navigation-horizontal {
+  position: fixed;
+  padding-right: 220px;
+  top: 0px;
+}
+.page-container.page-navigation-top-fixed .page-content {
+  padding-top: 50px;
+}
+.page-container.page-navigation-top-fixed.page-navigation-toggled .x-navigation.x-navigation-horizontal {
+  padding-right: 50px;
+}
+body.page-container-boxed {
+  background: url("../img/backgrounds/wall_1.jpg") left top no-repeat fixed;
+  padding: 20px 0px;
+}
+body.page-container-boxed .page-container {
+  width: 1200px;
+  float: none;
+  margin: 0px auto;
+  -moz-box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.2);
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+/* END PAGE CONTAINER */
+
+.page-container.page-mode-rtl .x-navigation.x-navigation-minimized li .profile:after {
+  right: auto;
+  left: 100%;
+  border-right-color: transparent;
+  border-left-color:   background: #002840;
+  background: #002840;
+#002840;
+}
+
+@media only screen and (max-width: 780px) {
+  .page-container .page-sidebar {
+    position: relative;
+    float: left;
+    width: 100%;
+  }
+  .page-container .page-sidebar.scroll {
+    position: relative;
+  }
+  .page-container .page-content {
+    margin-left: 0px;
+  }
+  .page-container .page-content .content-frame .content-frame-left,
+  .page-container .page-content .content-frame .content-frame-right {
+    width: 100%;
+    display: none;
+  }
+  .page-container .page-content .content-frame .content-frame-body {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .page-container .page-content .content-frame .content-frame-body.content-frame-body-left {
+    margin-right: 0px;
+  }
+  .page-container .page-content .content-frame .content-frame-left-toggle,
+  .page-container .page-content .content-frame .content-frame-right-toggle {
+    display: inline-block;
+  }
+  .page-container.page-navigation-toggled .page-content {
+    margin-left: 0px;
+  }
+  .page-container.page-mode-rtl .page-content {
+    margin-right: 0px;
+  }
+  .page-container.page-navigation-top-fixed .x-navigation.x-navigation-horizontal {
+    padding-right: 0px;
+    position: relative;
+  }
+  .page-container.page-navigation-top-fixed .page-content {
+    padding-top: 0px;
+  }
+
+}
+.panel {
+    float: left;
+    width: 100%;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+    /*min-height: 422px;*/
+    border: 1px solid #eee;
+    /*border-top: 2px solid #E5E5E5;*/
+    margin-bottom: 20px;
+    position: relative;
+    -webkit-box-shadow: 0 0px 0px rgba(0,0,0,0.05);
+     box-shadow: 0 0px 0px rgba(0,0,0,0.05);
+
+
+}
+.panel .panel-heading {
+  padding: 10px;
+}
+.panel-header {
+    height: 30px;
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: 300;
+    padding-left: 20px;
+    background-color: #163c52;
+    color: #fff;
+    text-align: left;
+    /*border-top: 3px solid #25a6e5;*/
+    line-height: 2;
+}
+
+.panel .panel-heading .panel-title {
+  margin-left: 7px;
+}
+.panel .panel-heading .panel-title-box {
+  float: left;
+}
+.panel .panel-heading .panel-title-box h3 {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+  color: #434a54;
+  padding: 0px;
+  margin: 0px;
+}
+.panel .panel-heading .panel-title-box span {
+  font-size: 12px;
+  color: #a7adb5;
+  font-weight: 400;
+  line-height: 12px;
+}
+.panel .panel-heading,
+.panel .panel-footer,
+.panel .panel-body {
+/*  float: left;
+  width: 100%;
+  padding-bottom: 0px;*/
+
+  /* float: left; */
+width: 93%;
+padding-bottom: 0px;
+margin-left: auto;
+margin-right: auto;
+
+}
+/*Default Drupal Custom Styling*/
+
+#block-navinfo-navinfo-sidebar-menu {
+  margin:0px;
+  border:0px;
+}
+
+/* Paste this css to your style sheet file or under head tag */
+/* This only works with JavaScript,
+if it's not present, don't show loader */
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+}

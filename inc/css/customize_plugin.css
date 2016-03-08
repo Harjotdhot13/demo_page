@@ -1,0 +1,48 @@
+/**
+ * Customize css file
+ *
+ */
+
+/*
+ * Div center
+ */
+ .div-center {
+  margin-left: auto;
+  margin-right: auto;
+ }
+
+/* centered columns styles */
+.row-centered {
+  text-align: center;
+}
+.col-centered {
+  display: inline-block;
+  float: none;
+  /* reset the text-align */
+  text-align: left;
+  /* inline-block space fix */
+  margin-right: -4px;
+}
+
+/**
+ * vertical-divider-line
+ */
+.vertical-divider-line-1-fff {
+  width: 1px;
+  height: 100%;
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+/**
+ *
+ */
+.transform-scale-2-2 {
+   -ms-transform: scale(2,2); /* IE 9 */
+   -webkit-transform: scale(2,2); /* Safari and Chrome */
+   -o-transform: scale(2,2);  /* Opera */
+   -moz-transform: scale(2,2);  /* Firefox */
+   transform: scale(2,2);
+ }

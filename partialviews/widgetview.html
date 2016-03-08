@@ -1,0 +1,24 @@
+<!-- to render widget view on the page -->
+<div class="dashpage-index-square-number-wrapper bg-ffffff" style="padding-bottom: 20px">
+  <div class="row margin-top-24">
+    <div data-ng-repeat="widget in landingPageData.pageWidgets.value">
+      <div class="col-xs-6 col-sm-3 text-center margin-top-2">
+        <div class="dashpage-square-number-wrapper">
+          <div class="dashpage-square-number-top border-1-e7e7e7">
+            <div class="h6 padding-top-6">{{ widget.title }} </div>
+            <div class="h3 line-height-1-5">{{ widget.value }} </div>
+          </div>
+          <div class="row margin-0">
+            <div class="dashpage-square-number-left col-xs-6 {{ widget.bgColorClass1 }} color-fff padding-0 height-52">
+              <div class="margin-top-6 margin-bottom-6">{{ widget.subValue1 }}</div>
+              <div class="font-size-10">{{ widget.subLabel1 }} </div>
+            </div>
+            <div class="dashpage-square-number-right col-xs-6 {{ widget.bgColorClass2 }} color-fff padding-0 height-52">
+              <div class="margin-top-6 margin-bottom-6">{{ widget.subValue2 }}</div>
+              <div class="font-size-10 text-center">{{ widget.subLabel2 }}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
